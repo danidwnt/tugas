@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <nav>
+        <div class="left-side">
+          <a href="index.html">
+            <img src="assets/logo.png" alt="logo" />
+          </a>
+          <ul>
+            <li>
+              <a href="index.html" class="list-active">Home</a>
+            </li>
+            <li>
+              <a href="blog.html" class="list-active">My Project</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side">
+          <a href="contact.html"> Contact Me </a>
+        </div>
+      </nav>
+
+
+
+    <div class="form-total">
+    <form action="">
+        <div class="conter">
+    <div class="header">
+        <h1>GET IN TOUCH</h1>
+    </div>
+
+        <div class="nama">
+            <label for="nama">Name</label>
+            <input id="nama" type="text" placeholder="your name">
+        </div>
+        <div class="emaill">
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="your email">
+        </div>
+    
+        <div class="phonee">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" placeholder="your number phone">
+        </div>
+        <div class="subject">
+            <label for="subjack">Subject</label>
+            <select name="" id="subjack" >
+                <option value="Development Fullstack" >Development Fullstack</option>
+                <option value="Software Engineer">Software Engineer</option>
+                <option value="Development Mobile">Development Mobile</option>
+            </select>
+        </div> 
+
+    <div class="pesan">
+        <label for="psn">Your Message</label>
+        <textarea id="psn" placeholder="your message"></textarea>
+    </div>
+    <div class="btn">
+        <button type="button" onclick="showData()">Submit</button>
+    </div>
+    </form>
+    </div>
+</div>
+
+<script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<html>
+
+<head>
+  <title>Creating Blog Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="left-side">
+      <a href="index.html">
+        <img src="assets/logo.png" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="blog.html" class="list-active">My Project</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <a href="contact.html"> Contact Me </a>
+    </div>
+  </nav>
+
+  <!-- Blog -->
+  <!-- Form -->
+  <div class="blog">
+    <div class="blog-form">
+      <div class="form-container">
+        <form onsubmit="addBlog(event)">
+          <h1>ADD MY PROJECT</h1>
+          <div class="title">
+            <label for="input-blog-title">Project Name</label>
+            <input id="input-blog-project" />
+          </div>
+          
+          <div class="flex-input">
+          <div class="left-input">
+            <label for="input-blog-date">Start Date</label>
+            <input type="date" id="startdate" />
+          </div>
+
+          <div class="right-input">
+            <label for="input-blog-date">End Date</label>
+            <input type="date" id="enddate" />
+          </div>
+          </div>
+
+          <div>
+            <label for="input-blog-description">Description</label>
+            <textarea id="input-blog-description"></textarea>
+          </div>
+
+          <div>
+            <label for="input-blog-checkbox">Technologies</label>
+            <div class="input-checkbox">
+            <div class="checkbox1">
+              <p><input type="checkbox" value="Note Js" class="checkbox" id="checkbox1">Note Js</p>
+              <p><input type="checkbox" value="React js" class="checkbox" id="checkboxx">React Js</p>
+            </div>
+            <div class="checkbox2">
+              <p><input type="checkbox" value="Next Js" class="checkbox" id="checkboxxx">Next Js</p>
+              <p><input type="checkbox" value="TypeScript" class="checkbox" id="checkboxxxx">TypeScript</p >
+            </div>
+          </div>
+          </div>
+
+          <div class="upload">
+            <label>Upload Image</label>
+            <div class="input-blog-image-group">
+              <label for="input-blog-image">
+                <p>Attach File</p>
+                <img src="assets/file.png" alt="file" />
+              </label>
+              <input type="file" id="input-blog-image" hidden />
+            </div>
+          </div>
+
+          <div class="button-group">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr class="line" />
+
+    <!-- List Blog -->
+    <div class="judul-blog-list">
+        <h1>MY PROJECT</h1>
+    </div>
+
+    <div class="container-blog">
+    <div id="contents" class="blog-list">
+      <!-- dynamic content would be here -->
+      <div class="blog-list-item">
+        <div class="blog-image">
+          <img src="assets/blog-img.png" alt="" />
+        </div>
+        <div class="blog-content">
+
+          <h4>
+            <a href="blog-detail.html" target="_blank">Dumbways Mobile App - 2021</a>
+          </h4>
+          <div class="detail-blog-content">
+            durasi: 3 bulan
+          </div>
+          <p>
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan.
+          </p>
+          <div class="icon-card">
+
+            <p id="value-checkbox"></p>
+            <a><i class="fab fa-node-js fa-2x"></i></a>
+            <a><i class="fab fa-react fa-2x"></i></a>
+            <a><i class="fab fa-js fa-2x"></i></a>
+            <a><i class="fab fa-android fa-2x"></i></a>
+
+          </div>
+        
+          <div class="btn-group">
+            <button class="btn-edit">edit</button>
+            <button class="btn-post">delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-list-item">
+        <div class="blog-image">
+          <img src="assets/blog-img.png" alt="" />
+        </div>
+        <div class="blog-content">
+
+          <h4>
+            <a href="blog-detail.html" target="_blank">Dumbways Mobile App - 2021</a>
+          </h4>
+          <div class="detail-blog-content">
+            durasi: 3 bulan
+          </div>
+          <p>
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan.
+          </p>
+          <div class="icon-card">
+            <a><i class="fab fa-node-js fa-2x"></i></a>
+            <a><i class="fab fa-react fa-2x"></i></a>
+            <a><i class="fab fa-js fa-2x"></i></a>
+            <a><i class="fab fa-android fa-2x"></i></a>
+
+          </div>
+        
+          <div class="btn-group">
+            <button class="btn-edit">edit</button>
+            <button class="btn-post">delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-list-item">
+        <div class="blog-image">
+          <img src="assets/blog-img.png" alt="" />
+        </div>
+        <div class="blog-content">
+
+          <h4>
+            <a href="blog-detail.html" target="_blank">Dumbways Mobile App - 2021</a>
+          </h4>
+          <div class="detail-blog-content">
+            durasi: 3 bulan
+          </div>
+          <p>
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan.
+          </p>
+          <div class="icon-card">
+            <a><i class="fab fa-node-js fa-2x"></i></a>
+            <a><i class="fab fa-react fa-2x"></i></a>
+            <a><i class="fab fa-js fa-2x"></i></a>
+            <a><i class="fab fa-android fa-2x"></i></a>
+
+          </div>
+        
+          <div class="btn-group">
+            <button class="btn-edit">edit</button>
+            <button class="btn-post">delete</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="blog-list-item">
+        <div class="blog-image">
+          <img src="assets/blog-img.png" alt="" />
+        </div>
+        <div class="blog-content">
+
+          <h4>
+            <a href="blog-detail.html" target="_blank">Dumbways Mobile App - 2021</a>
+          </h4>
+          <div class="detail-blog-content">
+            durasi: 3 bulan
+          </div>
+          <p>
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan.
+          </p>
+          <div class="icon-card">
+            <a><i class="fab fa-node-js fa-2x"></i></a>
+            <a><i class="fab fa-react fa-2x"></i></a>
+            <a><i class="fab fa-js fa-2x"></i></a>
+            <a><i class="fab fa-android fa-2x"></i></a>
+
+          </div>
+        
+          <div class="btn-group">
+            <button class="btn-edit">edit</button>
+            <button class="btn-post">delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-list-item">
+        <div class="blog-image">
+          <img src="assets/blog-img.png" alt="" />
+        </div>
+        <div class="blog-content">
+
+          <h4>
+            <a href="blog-detail.html" target="_blank">Dumbways Mobile App - 2021</a>
+          </h4>
+          <div class="detail-blog-content">
+            durasi: 3 bulan
+          </div>
+          <p>
+            Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+            menjadi isu yang belum terpecahkan.
+          </p>
+          <div class="icon-card">
+            <a><i class="fab fa-node-js fa-2x"></i></a>
+            <a><i class="fab fa-react fa-2x"></i></a>
+            <a><i class="fab fa-js fa-2x"></i></a>
+            <a><i class="fab fa-android fa-2x"></i></a>
+
+          </div>
+        
+          <div class="btn-group">
+            <button class="btn-edit">edit</button>
+            <button class="btn-post">delete</button>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+
+    
+
+    
+
+  </div>
+  <script src="blog.js"></script>
+</body>
+
+</html>
